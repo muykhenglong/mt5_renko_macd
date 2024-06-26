@@ -17,8 +17,8 @@ import time
 import copy
 
 # establish MetaTrader 5 connection to a specified trading account
-if not mt5.initialize(login=82963573, server="MetaQuotes-Demo",password="F*Kw6sZo"):
-    print("initialize() failed, error code =",mt5.last_error())
+if not mt5.initialize(login=login, server=server, password=password): # adjust the code per trading account credential
+    print("initialize() failed, error code =", mt5.last_error())
 
 #defining strategy parameters
 pairs = ['USDCAD']
